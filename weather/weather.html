@@ -1,0 +1,36 @@
+<style>
+body 
+{
+    background: url('https://snap-photos.s3.amazonaws.com/img-thumbs/280h/MORN3JHPKT.jpg') fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+</style>
+
+<div id="weatherBody">
+    <form>
+      <div class="form-group">
+        <input class="form-control" type="numbers" ng-model="zip" placeholder="Enter Zip..." />
+        <input class="btn btn-default" type="submit" value="Search" ng-click="findWeather(zip)" />
+      </div>
+    </form>
+    <div class="weather-bar">
+      <h1>Forecast For {{ place.location.city }}, {{ place.location.region }}</h1>
+      <h3>Current: {{ place.item.condition.text }} | {{ place.item.condition.temp }}°</h3>
+      <h3>Sunrise: {{ place.astronomy.sunrise }} | Sunset: {{ place.astronomy.sunset }}</h3>
+      <div class="row">
+        <div class="col-xs-2" ng-repeat="forecast in place.item.forecast">
+          <div class="panel panel-primary">
+              <p><strong>{{ forecast.date }}</strong></p>
+            <div class="panel-body">
+              
+              <p>{{ forecast.text }}</p>
+              <p>H: {{ forecast.high }}° | L: {{ forecast.low }}°</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

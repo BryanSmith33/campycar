@@ -1,0 +1,24 @@
+<style>
+body 
+{
+    background: url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/8FD89C2095.jpg') fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+</style>
+
+    <div class="messages-container">
+
+      <form>
+      	<input class="message" type="text" ng-model="name" placeholder="Name" required>
+        <input class="message" type="text" ng-model="input" placeholder="What's on your mind?" ng-keyup="postData($event.keyCode)" required>
+      </form>
+
+      <div class="messages-container">
+        <p ng-repeat="message in messages">{{message.user}}: {{message.text}}</p>
+        
+    </div>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+
+

@@ -1,0 +1,271 @@
+body, html
+{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*Login*/
+
+.wrap
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+p.form-title
+{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 5%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+form
+{
+    width: 350px;
+    margin: 0 auto;
+}
+
+form.login input[type="text"], form.login input[type="password"]
+{
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    outline: 0;
+}
+
+form.login input[type="submit"]
+{
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+form.login input[type="submit"]:hover
+{
+    transition: background-color 0.5s ease;
+}
+
+form.login .remember-forgot
+{
+    float: left;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+form.login .forgot-pass-content
+{
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form.login label, form.login a
+{
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+form.login a
+{
+    transition: color 0.5s ease;
+}
+
+form.login a:hover
+{
+    color: #2ecc71;
+}
+
+.pr-wrap
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+
+
+/*NavBar*/
+
+.navbar
+{
+    height: 75px;
+    position: fixed;
+    line-height: 55px;
+    position: relative;
+    width: 100%;
+}
+
+.navbar-header a
+{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 50px;        
+    line-height: 75px;
+    min-width: 85px;
+}
+
+#myNavbar a
+{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 25px;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+#myNavbar
+{
+    min-width: 1200px;
+}
+
+
+/*Age Verify*/
+
+.age-wrapper
+{
+    text-align: center;
+    font-size: 95px;
+    color: #FFFFFF;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-left: 25px;
+    text-transform: uppercase;
+    line-height: 32px;
+    min-width: 35px;
+}
+
+.age-wrapper a
+{
+    width: 100%;
+    font-size: 75px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    font-family: 'Open Sans' , sans-serif;
+    font-weight: 600;
+    margin-top: 50px;
+    text-transform: uppercase;
+
+}
+
+.age-wrapper a:hover
+{
+    color:black;
+}
+
+
+/*weather*/
+
+ h1, h3 
+{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form-control {
+  float: left;
+  margin-right: 10px;
+  width: 70%;
+}
+
+
+.weather-bar p, h4
+{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+}
+
+.panel
+{
+    background-color: #E4E4F1;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 3px;
+    min-width: 155px;
+    height: 200px;
+    width: 200px;
+    margin-left: 135px;
+}
+
+
+.row
+{
+    width:100%;
+    padding-top: 2%;
+}
+
+/*Forum*/
+
+
+.messages-container p
+{
+    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-top: 50px;
+    text-align: center;
+    width: 55%;
+    margin: 10px auto;
+    background: rgba(255, 255, 255, 0.86);
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.messages-container input
+{
+    width: 360px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
