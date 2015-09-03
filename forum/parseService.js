@@ -5,7 +5,7 @@ app.service('parseService', function($http){
     return $http ({
       method: "POST",
       url: 'https://api.parse.com/1/classes/campy',
-      headers: {'X-Parse-Application-Id': 'uzkPzKYgLgF4Ie3QO4cpJhaPI7pLzAHYyUfHXFZh', 'X-Parse-REST-API-Key': 'mLQJyj4IbYOgu1Ro9wfJYRyOYVtx8ZdrATRJAVch'},
+      headers: {'X-Parse-Application-Id': '', 'X-Parse-REST-API-Key': ''},
       data: {
         'text': message,
         'user': name
@@ -17,7 +17,7 @@ app.service('parseService', function($http){
     return $http ({
       method: "GET",
       url:'https://api.parse.com/1/classes/campy?order=-createdAt',
-      headers: {'X-Parse-Application-Id': 'uzkPzKYgLgF4Ie3QO4cpJhaPI7pLzAHYyUfHXFZh', 'X-Parse-REST-API-Key': 'mLQJyj4IbYOgu1Ro9wfJYRyOYVtx8ZdrATRJAVch'}
+      headers: {'X-Parse-Application-Id': '', 'X-Parse-REST-API-Key': ''}
     });
   }
 
